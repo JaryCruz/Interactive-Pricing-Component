@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Interactive pricing component</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+      <img src="images/pattern-circles.svg" alt="">
+    </header>
+
+    <section>
+      <p class="views"><span data-views>100K</span> Pageviews</p>
+      <input type="range" min="1" max="5" step="1" value="3" data-slider-input>
+      <div class="pricing">
+        <p class="total-price"><span data-total-price>$16.00 </span><span class="type" data-month>/ month</span></p>
+      </div>
+      <div class="options">
+        <p>Monthly Billing</p>
+        <label class="switch" data-switch-container>
+          <input type="checkbox" data-check-input>
+          <span class="slider" data-circle-slider></span>
+        </label>
+        <p>Yearly Billing</p>
+        <small>-25%<span class="discount">discount</span></small>
+      </div>
+      <hr>
+      <div class="benefits">
+        <ul>
+          <li>
+            <img src="images/icon-check.svg" alt="">
+            <p>Unlimited websites</p>
+          </li>
+          <li>
+            <img src="images/icon-check.svg" alt="">
+            <p>100% data ownership</p>
+          </li>
+          <li>
+            <img src="images/icon-check.svg" alt="">
+            <p>Email reports</p>
+          </li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </section>
+    <div class="overlay"></div>
+  </main>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
